@@ -16,7 +16,7 @@ The final executable will then be located within `../bin`
 For a general overview of the program, execute the following: `./ATMTool -h`
 
 ### Decryption
-You can decrypt an `ATM` file by running `./ATMTool -d filename.ATM`. This will output the 5 tracks held within the ecrypted files.
+You can decrypt an `ATM` file by running `./ATMTool -d filename.ATM`. This will output the 5 tracks held within the encrypted files.
 
 - drums.at3
 - bass_guitar.at3
@@ -26,3 +26,8 @@ You can decrypt an `ATM` file by running `./ATMTool -d filename.ATM`. This will 
 
 ### Encryption
 You can encrypt an `ATM` file by running `./ATMTool -e filename.ATM`. This will generate one `ATM` file that can be used within Rock Band Unplugged. Before this command is executed, the files mentioned above (with the exact names mentioned), must be located in the same directory as the executable.
+
+## Support
+If you'd like to support me and my software development adventures, feel free to contribute. Your support means a lot to me!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D31BH824)
