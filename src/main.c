@@ -8,7 +8,9 @@
 
 int main(int argc, char *argv[]){
     if (argc < 2){
-        return 1;
+      printf("Unrecognized parameters, please use the flag -h for further "
+             "info.\n");
+      return 1;
     }
 
     char *option = argv[1];

@@ -129,6 +129,7 @@ void EncodeATM(char *filename){
     }
 
     fclose(out_atm);
-    
+    free(temp_chunk);
+
     ATM_LOG("Finished encoding %s", filename);
 }
