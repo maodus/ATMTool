@@ -16,10 +16,17 @@ set(SRC_DIR src/atm)
 set(CRYPTO_DIR src/crypto)
 set(INCLUDE_DIR include)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+# Define platform-specific binary output directories
+if (CMAKE_SYSTEM_NAME STREQUAL "Windows64")
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/windows)
+else()
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/linux)
+endif()
+
+set(EXECUTABLE_NAME "ATMTool")
 
 # Add the executable with all the source files
-add_executable(ATMTool
+add_executable(${EXECUTABLE_NAME}
     ${SRC_DIR}/atm_decode.c
     ${SRC_DIR}/atm_encode.c
     ${SRC_DIR}/atm_header.c
@@ -27,6 +34,6 @@ add_executable(ATMTool
     src/main.c
 )
 
-target_include_directories(ATMTool PRIVATE
+target_include_directories(${EXECUTABLE_NAME} PRIVATE
     ${INCLUDE_DIR}
 )
