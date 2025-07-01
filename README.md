@@ -37,8 +37,3 @@ Your resulting at3 must contain stereo audio with a bitrate of 66 kbps. This can
 - `.\at3tool.exe -e -br 66 track.wav track.at3`
 
 After obtaining at3 files for all 5 tracks, you can then follow the encryption process described above.
-
-## Support
-If you'd like to support me and my software development adventures, feel free to contribute. Your support means a lot to me!
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D31BH824)
