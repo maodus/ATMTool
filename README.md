@@ -31,7 +31,7 @@ You can decrypt an `ATM` file by running `./ATMTool -d filename.ATM`. This will 
 You can encrypt an `ATM` file by running `./ATMTool -e filename.ATM`. This will generate one `ATM` file that can be used within Rock Band Unplugged. Before this command is executed, the files mentioned above (with the exact names mentioned), must be located in the same directory as the executable.
 
 ## Conversion
-For converting audio to a format playable in Rock Band Unplugged, you must first ensure that you have a mono-audio (1CH) `.wav` file. I recommend using at3tool for the actual conversion process. This will transform your wav file into an at3 file.
+For converting audio to a format playable in Rock Band Unplugged, you must first ensure that you have a mono-audio (1CH) `.wav` file. I recommend using [at3tool](https://www.pspunk.com/psp-atrac3/) for the actual conversion process. This will transform your wav file into an at3 file.
 
 Your resulting at3 must contain stereo audio with a bitrate of 66 kbps. This can be achieved with the following command:
 - `.\at3tool.exe -e -br 66 track.wav track.at3`
